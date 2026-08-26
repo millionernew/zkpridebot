@@ -1,3 +1,4 @@
+
 import asyncio
 import logging
 import sqlite3
@@ -332,15 +333,6 @@ async def coinflip_result(call: types.CallbackQuery):
             f"▸ Выпало: {result_text}\n"
             f"▸ Результат: **💔 Проигрыш -{amount} руб**\n\n"
             f"_Тени не прощают ошибок..._ 🖤"
-        )
-
-    await call.message.edit_text(
-        msg,
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="🎲 Ещё раз", callback_data="coinflip")],
-            [InlineKeyboardButton(text="◀️ Назад", callback_data="back")]
-        ])
-    )
 
 # ----- РЕФЕРАЛЫ -----
 @dp.callback_query(lambda c: c.data == "refs")
