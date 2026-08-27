@@ -5,8 +5,8 @@ from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-TOKEN = "8991980936:AAGMYCNcD0fxALcsrnhXAFt8IH87AHtSiX4"
-ADMIN_ID = 5663913815  # свой ТГ ID
+TOKEN = "8717183010:AAFzWmvVDDnEswbGuyT8FDwfBkhG4shLnmY"
+ADMIN_ID = 5663913815  
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
